@@ -1,0 +1,18 @@
+body{
+	width: 980px;
+	margin: auto;
+}
+#wrapper{
+	text-align: center;
+}
+#tbodega{
+	margin: auto;
+}
+#tbodega td{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#tbodega th{
+	padding-left: 5px;
+	padding-right: 5px;
+}

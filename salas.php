@@ -9,11 +9,13 @@
   <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen">
   <link rel="stylesheet" type="text/css" href="css/tablesorter.css" media="screen">
   <link rel="stylesheet" type="text/css" href="css/fm.datetator.jquery.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" media="screen">
   <script src="js/jquery-2.1.4.js"></script>
   <script src="js/jquery.tablesorter.js"></script>  
   <script src="js/jquery.colorbox.js"></script>
   <script src="js/jquery.colorbox-es.js"></script>
   <script src="js/fm.datetator.jquery.js"></script>
+  <script src="js/jquery.datetimepicker.full.js"></script>
 </head>
 
 <body>
@@ -29,7 +31,14 @@
 	$(document).ready(function() 
 	    { 
   	      $(".tablesorter").tablesorter();
-  	      $("#fecha").datetator();
+  	      $("#fecha").datetimepicker();
+  	      $.datetimepicker.setLocale('es');
+  	      $('#fecha').datetimepicker({
+			lang:'es',
+			timepicker:false,
+			format:'Y-m-d',
+			formatDate:'Y-m-d',
+			});
 	    } 
 	); 	    
 </script>
